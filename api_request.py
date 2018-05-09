@@ -1,6 +1,6 @@
 import requests
 import json
-from api_keys import api_keys
+from .api_keys import api_keys
 
 class Keyed_Request(requests.Request):
     """Custom class of requests.Request, which requires a 'group' keyword argument and appends the appropriate API key to the headers."""
